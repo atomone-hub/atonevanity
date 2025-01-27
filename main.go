@@ -22,7 +22,7 @@ type matcher struct {
 }
 
 func (m matcher) Match(candidate string) bool {
-	candidate = strings.TrimPrefix(candidate, "cosmos1")
+	candidate = strings.TrimPrefix(candidate, "atone1")
 	if !strings.HasPrefix(candidate, m.StartsWith) {
 		return false
 	}
@@ -73,7 +73,7 @@ func (w wallet) String() string {
 func generateWallet() wallet {
 	var privkey secp256k1.PrivKey = secp256k1.GenPrivKey()
 	var pubkey secp256k1.PubKey = privkey.PubKey().(secp256k1.PubKey)
-	bech32Addr, err := bech32.ConvertAndEncode("cosmos", pubkey.Address())
+	bech32Addr, err := bech32.ConvertAndEncode("atone", pubkey.Address())
 	if err != nil {
 		panic(err)
 	}

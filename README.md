@@ -1,14 +1,15 @@
-[![Build Status](https://github.com/hukkinj1/cosmosvanity/workflows/Tests/badge.svg?branch=master)](https://github.com/hukkinj1/cosmosvanity/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)
-[![codecov.io](https://codecov.io/gh/hukkinj1/cosmosvanity/branch/master/graph/badge.svg)](https://codecov.io/gh/hukkinj1/cosmosvanity)
+<!---
+[![Build Status](https://github.com/atomone-hub/atonevanity/workflows/Tests/badge.svg?branch=master)](https://github.com/atomone-hub/atonevanity/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)
+[![codecov.io](https://codecov.io/gh/atomone-hub/atonevanity/branch/master/graph/badge.svg)](https://codecov.io/gh/atomone-hub/atonevanity)
+-->
+
 # cosmosvanity
 
-<!--- Don't edit the version line below manually. Let bump2version do it for you. -->
-> Version 1.0.0
-
-> CLI tool for generating [Cosmos](https://cosmos.network) vanity addresses
+> CLI tool for generating [Atone](https://atom.one) vanity addresses
+> Fork of CosmosVanity.
 
 ## Features
-* Generate Cosmos bech32 vanity addresses
+* Generate AtomOne (atone1...) bech32 vanity addresses
 * Use all CPU cores
 * Specify a substring that the addresses must
     * start with
@@ -18,30 +19,30 @@
 * Binaries built for Linux, macOS and Windows
 
 ## Installing
-Download the latest binary release from the [_Releases_](https://github.com/hukkinj1/cosmosvanity/releases) page. Alternatively, build from source yourself.
+Download the latest binary release from the [_Releases_](https://github.com/atomone-hub/atonevanity/releases) page. Alternatively, build from source yourself.
 
 ## Usage examples
-Find an address that starts with "00000" (e.g. cosmos100000v3fpv4qg2a9ea6sj70gykxpt63wgjen2p)
+Find an address that starts with "00000" (e.g. atone100000v3fpv4qg2a9ea6sj70gykxpt63wgjen2p)
 ```bash
 ./cosmosvanity --startswith 00000
 ```
 
-Find an address that ends with "8888" (e.g. cosmos134dck5uddzjure8pyprmmqat96k3jlypn28888)
+Find an address that ends with "8888" (e.g. atone134dck5uddzjure8pyprmmqat96k3jlypn28888)
 ```bash
 ./cosmosvanity --endswith 8888
 ```
 
-Find an address containing the substring "gener" (e.g. cosmos1z39wgener7azgh22s5a3pyswtnjkx2w0hvn3rv)
+Find an address containing the substring "gener" (e.g. atone1z39wgener7azgh22s5a3pyswtnjkx2w0hvn3rv)
 ```bash
 ./cosmosvanity --contains gener
 ```
 
-Find an address consisting of letters only (e.g. cosmos1rfqkejeaxlxwtjxucnrathlzgnvgcgldzmuxxe)
+Find an address consisting of letters only (e.g. atone1rfqkejeaxlxwtjxucnrathlzgnvgcgldzmuxxe)
 ```bash
 ./cosmosvanity --letters 38
 ```
 
-Find an address with at least 26 digits (e.g. cosmos1r573c4086585u084926726x535y3k2ktxpr88l)
+Find an address with at least 26 digits (e.g. atone1r573c4086585u084926726x535y3k2ktxpr88l)
 ```bash
 ./cosmosvanity --digits 26
 ```
